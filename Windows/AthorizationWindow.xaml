@@ -1,0 +1,69 @@
+﻿<Window x:Class="_163OnMyNeckFeatOgBurmikFtAnisimov.Windows.AthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_163OnMyNeckFeatOgBurmikFtAnisimov.Windows"
+        mc:Ignorable="d"
+        Title="AthorizationWindow" Height="800"
+        Width="600">
+    <Grid >
+      
+        <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <TextBlock
+                x:Name="TbAvtoriz"
+                Text="Авторизация"
+                FontSize="50"
+                 VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontWeight="Black"
+              
+             />
+            <TextBlock
+                x:Name="TbLogin"
+                Text="Введите логин"
+                FontSize="30"
+                VerticalAlignment="Center"
+                
+                Margin="10 100 0 0"
+             />
+            <TextBox
+                 x:Name="TextLogin"
+               Width="300"
+                FontSize="30"
+                Height="50"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="0 10 0 0"/>
+            <TextBlock
+                x:Name="TbPassword"
+                Text="Введите пароль"
+                FontSize="30"
+                VerticalAlignment="Center"
+                Margin="10 20 0 0"
+             />
+            <PasswordBox
+                x:Name="PBPasswoed"
+                Width="300"
+                 VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Height="50"
+                />
+            <Button
+                x:Name="Vhod"
+                Height="80"
+                Content="вход"
+                Margin="0 80 0 0"
+                FontSize="50"
+                Width="300" Click="Vhod_Click"/>
+            <TextBlock x:Name="TBRegistr"
+                       Text="Нет аккаунта?Зарегистрируйтесь"
+                       FontSize="20"
+                       Margin=" 0 60 0 0 "
+                       Foreground="Blue"
+                       HorizontalAlignment="Center" MouseLeftButtonUp="TBRegistr_MouseLeftButtonUp"/>
+
+        </StackPanel>
+        
+    </Grid>
+</Window>
