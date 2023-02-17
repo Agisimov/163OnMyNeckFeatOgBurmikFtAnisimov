@@ -128,8 +128,14 @@
     <Compile Include="Pages\ProdListPage.xaml.cs">
       <DependentUpon>ProdListPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AddProdWindow1.xaml.cs">
+      <DependentUpon>AddProdWindow1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AthorizationWindow.xaml.cs">
       <DependentUpon>AthorizationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\MainMenuWindow.xaml.cs">
+      <DependentUpon>MainMenuWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\RegistranionWindow.xaml.cs">
       <DependentUpon>RegistranionWindow.xaml</DependentUpon>
@@ -143,6 +149,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ProdListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddProdWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\MainMenuWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -247,19 +261,19 @@
     <Folder Include="Res\" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="BD\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="BD\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
