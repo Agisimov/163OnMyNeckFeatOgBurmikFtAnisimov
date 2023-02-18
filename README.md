@@ -22,3 +22,8 @@
 <b1> Занесение в бд  </b>
 ![image](https://user-images.githubusercontent.com/116341190/218980786-7848388a-7e60-4623-bf68-9dc0f3533d67.png)
 
+
+<b1> Добавление продукта</b>
+![image](https://user-images.githubusercontent.com/116341190/219664328-aebab43f-760b-421c-b81f-bb5afd257867.png)
+![image](https://user-images.githubusercontent.com/116341190/219664489-00f83b58-572e-410c-9def-a27afd5afffa.png)
+
