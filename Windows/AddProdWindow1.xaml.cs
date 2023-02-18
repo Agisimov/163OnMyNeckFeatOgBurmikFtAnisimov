@@ -54,7 +54,7 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
             product.IdСategory = (cmbCatigory.SelectedItem as Category).Id;
             if (pathPhoto != null)
             {
-                product.Image = Convert.ToString(File.ReadAllBytes(pathPhoto));
+                product.Image = File.ReadAllBytes(pathPhoto);
             }
 
             context.Product.Add(product);
