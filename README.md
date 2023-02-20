@@ -27,3 +27,6 @@
 ![image](https://user-images.githubusercontent.com/116341190/219664328-aebab43f-760b-421c-b81f-bb5afd257867.png)
 ![image](https://user-images.githubusercontent.com/116341190/219664489-00f83b58-572e-410c-9def-a27afd5afffa.png)
 
+<b1> Список товаров</b>
+![image](https://user-images.githubusercontent.com/116341190/220129627-91cf9f97-4719-4e40-9646-7ec0813ad5f7.png)
+
