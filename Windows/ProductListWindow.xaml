@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:_163OnMyNeckFeatOgBurmikFtAnisimov.Windows"
         mc:Ignorable="d"
         Title="ProductListWindow" Height="800" Width="1200">
-    <Grid>
+    <Grid  Background="#FFF5EEDC">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
@@ -16,8 +16,8 @@
 
         <TextBlock Text="Список товаров"
                    HorizontalAlignment="Center"
-                   FontSize="30"
-                   FontWeight="Bold"/>
+                   FontSize="30"                
+                   FontWeight="Black" Foreground="#FF543213"/>
 
         <ListView x:Name="ProductList" 
                   Grid.Row="2" 
