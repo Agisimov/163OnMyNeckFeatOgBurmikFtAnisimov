@@ -40,12 +40,15 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
             var authUser = context.Account.ToList()
             .Where(i => i.Login == TextLogin.Text && i.Password == PBPasswoed.Password)
             .FirstOrDefault();
+        
 
             if (authUser != null)
             {
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
-                
+                ClassHelper.EmployeeDataContextClass.employee = authUser.Employee.FirstOrDefault();
+
+                MainMenuWindow mainMenuWindow = new MainMenuWindow();
+                mainMenuWindow.Show();
+                this.Close();
             }
             else
             {

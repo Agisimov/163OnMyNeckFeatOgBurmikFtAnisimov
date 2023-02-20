@@ -1,0 +1,41 @@
+﻿<Window x:Class="_163OnMyNeckFeatOgBurmikFtAnisimov.Windows.EmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_163OnMyNeckFeatOgBurmikFtAnisimov.Windows"
+        mc:Ignorable="d"
+        Title="EmployeeWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+
+        <TextBlock Text="Список сотрудников"
+                   HorizontalAlignment="Center"
+                   FontSize="30"                
+                   FontWeight="Black" Foreground="#FF543213"/>
+
+        <DataGrid Grid.Row="2" x:Name="EmpGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Имя" Binding="{Binding FName}"/>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding LName}"/>
+                <DataGridTextColumn Header="Дата рождения" Binding="{Binding Birthday}"/>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding Phone}"/>
+                <DataGridTextColumn Header="Логин" Binding="{Binding Login}"/>
+                <DataGridTextColumn Header="Пароль" Binding="{Binding Password}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnAddProd"
+                Height="30"
+                Width="50"
+                Grid.Row="3"
+                HorizontalAlignment="Right" 
+            />
+
+    </Grid>
+</Window>

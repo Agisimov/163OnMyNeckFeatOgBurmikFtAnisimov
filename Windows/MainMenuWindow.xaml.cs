@@ -22,6 +22,24 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
         public MainMenuWindow()
         {
             InitializeComponent();
+
+
+        }
+
+        private void BtnProd_Click(object sender, RoutedEventArgs e)
+        {
+            ProductListWindow productListWindow = new ProductListWindow();
+            productListWindow.Show();
+            this.Close();
+
+
+        }
+
+        private void BtnEmp_Click(object sender, RoutedEventArgs e)
+        {
+            EmployeeWindow employeeWindow = new EmployeeWindow();
+            employeeWindow.Show();
+            this.Close();
         }
     }
 }

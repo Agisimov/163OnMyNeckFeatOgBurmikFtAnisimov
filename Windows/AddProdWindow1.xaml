@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:_163OnMyNeckFeatOgBurmikFtAnisimov.Windows"
         mc:Ignorable="d"
         Title="AddProdWindow1" Height="850" Width="500">
-    <Grid>
+    <Grid  Background="#FFF5EEDC" >
         <StackPanel Orientation="Vertical" 
                     Margin="40 0 40 0 " >
 

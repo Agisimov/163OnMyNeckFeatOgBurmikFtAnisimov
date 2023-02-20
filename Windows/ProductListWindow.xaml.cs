@@ -27,12 +27,23 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
         {
             InitializeComponent();
             getAA();
+            if (ClassHelper.EmployeeDataContextClass.employee.Post.Id !=1)
+            {
+                btnAddProd.Visibility = Visibility.Hidden;
+            }
         }
         private void getAA()
         {
             List<Product> prodLists = new List<Product>();
             prodLists = context.Product.ToList();
             ProductList.ItemsSource = prodLists;
+        }
+
+        private void btnAddProd_Click(object sender, RoutedEventArgs e)
+        {
+            AddProdWindow1 addProdWindow1 = new AddProdWindow1();
+            addProdWindow1.Show();
+            this.Show();
         }
     }
 }
