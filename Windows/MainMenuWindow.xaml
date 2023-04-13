@@ -20,7 +20,7 @@
                     Width="100" Click="BtnEmp_Click"/>
             <Button x:Name="BtnProd"
                     Height="30"
-                    Content="продукты"
+                    Content="Продукты"
                     Margin="0 10 0 0"
                     Width="100" Click="BtnProd_Click"/>
             <Button x:Name="BtnAcc"
