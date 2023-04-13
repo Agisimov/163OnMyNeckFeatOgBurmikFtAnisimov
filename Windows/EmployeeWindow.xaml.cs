@@ -1,6 +1,8 @@
-﻿using System;
+﻿using _163OnMyNeckFeatOgBurmikFtAnisimov.BD;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,7 +25,25 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
         public EmployeeWindow()
         {
             InitializeComponent();
-            EmpGrid.ItemsSource = ClassHelper.EFClass.context.Account.ToList();
+            if (ClassHelper.EmployeeDataContextClass.employee.IdPost != 1 )
+            {
+                btnAddProd.Visibility = Visibility.Hidden;
+            }
+
+            EmpGrid.ItemsSource = context.Employee.ToList();
+        }
+
+        private void btnAddProd_Click(object sender, RoutedEventArgs e)
+        {
+            AddEmployeeWindow addEmployeeWindow = new AddEmployeeWindow();
+            addEmployeeWindow.Show();
+            this.Close();
+        }
+
+        private void edit_Click(object sender, RoutedEventArgs e)
+        {
+            context.SaveChanges();
+            MessageBox.Show("Измененно");
         }
     }
 }

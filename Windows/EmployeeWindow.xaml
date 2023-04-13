@@ -22,20 +22,28 @@
 
         <DataGrid Grid.Row="2" x:Name="EmpGrid" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Имя" Binding="{Binding FName}"/>
-                <DataGridTextColumn Header="Фамилия" Binding="{Binding LName}"/>
-                <DataGridTextColumn Header="Дата рождения" Binding="{Binding Birthday}"/>
-                <DataGridTextColumn Header="Телефон" Binding="{Binding Phone}"/>
-                <DataGridTextColumn Header="Логин" Binding="{Binding Login}"/>
-                <DataGridTextColumn Header="Пароль" Binding="{Binding Password}"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Account.FName}"/>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Account.LName}"/>
+                <DataGridTextColumn Header="Дата рождения" Binding="{Binding Account.Birthday}"/>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding Account.Phone}"/>
+                <DataGridTextColumn Header="Логин" Binding="{Binding Account.Login}"/>
+                <DataGridTextColumn Header="Пароль" Binding="{Binding Account.Password}"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="btnAddProd"
                 Height="30"
+                Content="+"
+                FontSize="20"
                 Width="50"
                 Grid.Row="3"
-                HorizontalAlignment="Right" 
+                HorizontalAlignment="Right" Click="btnAddProd_Click" 
             />
+        <Button x:Name="edit"
+                Height="40"
+                Content="Изменить"
+                Width="100"
+                  Grid.Row="3" Click="edit_Click"
+                />
 
     </Grid>
 </Window>

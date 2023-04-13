@@ -21,10 +21,6 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.BD
         }
     
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Phone { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
         public int IdGiftCard { get; set; }
         public int IdAccount { get; set; }
     

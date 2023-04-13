@@ -4,18 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b8ec565cd8eb4bd5b4a419ba6eacddaf" Name="Diagram1">
-        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Account" Width="1.5" PointX="0.75" PointY="4.5" />
-        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Category" Width="1.5" PointX="6" PointY="1.5" />
-        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Client" Width="1.5" PointX="3" PointY="4.5" />
-        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Employee" Width="1.5" PointX="6" PointY="4.5" />
-        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Gender" Width="1.5" PointX="3.75" PointY="2" />
-        <EntityTypeShape EntityType="AnisimovBurmistrovModel.GiftCard" Width="1.5" PointX="0.75" PointY="2.125" />
-        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Post" Width="1.5" PointX="3.75" PointY="8.25" />
-        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Product" Width="1.5" PointX="8.25" PointY="0.75" />
-        <EntityTypeShape EntityType="AnisimovBurmistrovModel.ProductSale" Width="1.5" PointX="10.5" PointY="4.875" />
-        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Sale" Width="1.5" PointX="8.25" PointY="4.75" />
-        <EntityTypeShape EntityType="AnisimovBurmistrovModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="8.25" />
+      <Diagram DiagramId="b8ec565cd8eb4bd5b4a419ba6eacddaf" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Account" Width="1.5" PointX="0.75" PointY="3.375" />
+        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Category" Width="1.5" PointX="6" PointY="8.875" />
+        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Client" Width="1.5" PointX="3" PointY="3.625" />
+        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Employee" Width="1.5" PointX="6" PointY="3.5" />
+        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Gender" Width="1.5" PointX="3.75" PointY="7.125" />
+        <EntityTypeShape EntityType="AnisimovBurmistrovModel.GiftCard" Width="1.5" PointX="0.75" PointY="0.875" />
+        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Post" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Product" Width="1.5" PointX="8.25" PointY="8.5" />
+        <EntityTypeShape EntityType="AnisimovBurmistrovModel.ProductSale" Width="1.5" PointX="10.5" PointY="3.625" />
+        <EntityTypeShape EntityType="AnisimovBurmistrovModel.Sale" Width="1.5" PointX="8.25" PointY="3.5" />
+        <EntityTypeShape EntityType="AnisimovBurmistrovModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="7.5" />
         <AssociationConnector Association="AnisimovBurmistrovModel.FK_Client_Account" />
         <AssociationConnector Association="AnisimovBurmistrovModel.FK_Employee_Account" />
         <AssociationConnector Association="AnisimovBurmistrovModel.FK_Product_Category" />

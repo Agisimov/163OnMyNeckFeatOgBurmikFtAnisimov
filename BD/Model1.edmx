@@ -30,10 +30,6 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Phone" Type="char" MaxLength="11" Nullable="false" />
-          <Property Name="Login" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="IdGiftCard" Type="int" Nullable="false" />
           <Property Name="IdAccount" Type="int" Nullable="false" />
         </EntityType>
@@ -42,8 +38,6 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Birthday" Type="date" Nullable="false" />
-          <Property Name="Phone" Type="char" MaxLength="11" Nullable="false" />
           <Property Name="IdPost" Type="int" Nullable="false" />
           <Property Name="IdGender" Type="int" Nullable="false" />
           <Property Name="IdAccount" Type="int" Nullable="false" />
@@ -437,10 +431,6 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Phone" Type="String" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
-          <Property Name="Login" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IdGiftCard" Type="Int32" Nullable="false" />
           <Property Name="IdAccount" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Account" Relationship="AnisimovBurmistrovModel.FK_Client_Account" FromRole="Client" ToRole="Account" />
@@ -452,8 +442,6 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Birthday" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="Phone" Type="String" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
           <Property Name="IdPost" Type="Int32" Nullable="false" />
           <Property Name="IdGender" Type="Int32" Nullable="false" />
           <Property Name="IdAccount" Type="Int32" Nullable="false" />
@@ -708,10 +696,6 @@
               <MappingFragment StoreEntitySet="Client">
                 <ScalarProperty Name="IdAccount" ColumnName="IdAccount" />
                 <ScalarProperty Name="IdGiftCard" ColumnName="IdGiftCard" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="Login" ColumnName="Login" />
-                <ScalarProperty Name="Phone" ColumnName="Phone" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -722,8 +706,6 @@
                 <ScalarProperty Name="IdAccount" ColumnName="IdAccount" />
                 <ScalarProperty Name="IdGender" ColumnName="IdGender" />
                 <ScalarProperty Name="IdPost" ColumnName="IdPost" />
-                <ScalarProperty Name="Phone" ColumnName="Phone" />
-                <ScalarProperty Name="Birthday" ColumnName="Birthday" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

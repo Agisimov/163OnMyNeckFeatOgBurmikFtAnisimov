@@ -21,8 +21,6 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.BD
         }
     
         public int Id { get; set; }
-        public System.DateTime Birthday { get; set; }
-        public string Phone { get; set; }
         public int IdPost { get; set; }
         public int IdGender { get; set; }
         public int IdAccount { get; set; }
