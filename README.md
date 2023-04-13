@@ -37,6 +37,18 @@
 ![image](https://user-images.githubusercontent.com/116341190/231677256-093e2ac8-7a04-4be8-9d06-71f46ce537f2.png)
 ![image](https://user-images.githubusercontent.com/116341190/231677359-391b0904-6fba-43cd-8fb9-68f195ee0b43.png)
 ![image](https://user-images.githubusercontent.com/116341190/231677397-28647987-dcf2-4477-bef5-3874a1b78ffc.png)
+<b1> Добавление и изменение</b>
+![image](https://user-images.githubusercontent.com/116341190/231769484-83aca8f3-3513-43cd-b1ff-8416db8eb4a2.png)
+![image](https://user-images.githubusercontent.com/116341190/231769625-49e58b39-cbbc-4354-93cc-e0f12a85004c.png)
+![image](https://user-images.githubusercontent.com/116341190/231769673-bd8caa7c-65ba-4d46-9f88-1b4c8ee157d0.png)
+![image](https://user-images.githubusercontent.com/116341190/231769729-6fc77c46-df9f-4894-819e-2590aa7773fb.png)
+![image](https://user-images.githubusercontent.com/116341190/231769915-a995c976-8172-469e-add3-3a81febb5497.png)
+![image](https://user-images.githubusercontent.com/116341190/231770019-52857f24-e665-4666-9161-4b3fbd956837.png)
+
+
+
+
+
 
 
 
