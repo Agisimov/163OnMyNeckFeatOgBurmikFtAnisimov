@@ -118,6 +118,7 @@
     <Compile Include="BD\sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="ClassHelper\CartClass.cs" />
     <Compile Include="ClassHelper\EFClass.cs" />
     <Compile Include="ClassHelper\EmployeeDataContextClass.cs" />
     <Compile Include="Pages\HistoryPage.xaml.cs">
@@ -137,6 +138,9 @@
     </Compile>
     <Compile Include="Windows\AthorizationWindow.xaml.cs">
       <DependentUpon>AthorizationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\CartWindow.xaml.cs">
+      <DependentUpon>CartWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\EmployeeWindow.xaml.cs">
       <DependentUpon>EmployeeWindow.xaml</DependentUpon>
@@ -167,6 +171,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\AddProdWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\CartWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -284,6 +292,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Res\cart.png" />
+    <Resource Include="Res\3081797.png" />
+    <Resource Include="Res\плюс.png" />
     <Resource Include="Res\семь.jpg" />
     <Resource Include="123.png" />
     <Content Include="BD\Model1.Context.tt">

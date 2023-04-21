@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using _163OnMyNeckFeatOgBurmikFtAnisimov.BD;
 using _163OnMyNeckFeatOgBurmikFtAnisimov.ClassHelper;
 using static _163OnMyNeckFeatOgBurmikFtAnisimov.ClassHelper.EFClass;
+using static _163OnMyNeckFeatOgBurmikFtAnisimov.ClassHelper.CartClass;
 
 
 namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
@@ -44,6 +45,34 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
             AddProdWindow1 addProdWindow1 = new AddProdWindow1();
             addProdWindow1.Show();
             this.Show();
+        }
+
+        private void BtnAddToCart_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            if (button == null)
+            {
+                return;
+            }
+
+            var selectedProduct = button.DataContext as BD.Product;
+
+
+            if (selectedProduct != null)
+            {
+                ClassHelper.CartClass.Products.Add(selectedProduct);
+            }
+
+
+
+        }
+
+        private void BtnGoToCart_Click(object sender, RoutedEventArgs e)
+        {
+            CartWindow cartWindow = new CartWindow();
+            cartWindow.Show();
+            this.Close();
+
         }
     }
 }

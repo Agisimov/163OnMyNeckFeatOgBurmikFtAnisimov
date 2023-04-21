@@ -43,7 +43,7 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
         private void edit_Click(object sender, RoutedEventArgs e)
         {
             context.SaveChanges();
-            MessageBox.Show("Измененно");
+            MessageBox.Show("Изменено");
         }
     }
 }

@@ -32,12 +32,16 @@
         </DataGrid>
         <Button x:Name="btnAddProd"
                 Height="30"
-                Content="+"
+                
                 FontSize="20"
                 Width="50"
                 Grid.Row="3"
                 HorizontalAlignment="Right" Click="btnAddProd_Click" 
-            />
+            >
+            <Button.Background>
+                <ImageBrush ImageSource="/163OnMyNeckFeatOgBurmikFtAnisimov;component/Res/плюс.png"/>
+            </Button.Background>
+        </Button>
         <Button x:Name="edit"
                 Height="40"
                 Content="Изменить"
