@@ -24,7 +24,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Номер заказа" Binding="{Binding Sale.Id}"/>
                 <DataGridTextColumn Header="Номер Работника" Binding="{Binding Sale.IdEmployee}"/>
-                <DataGridTextColumn Header="Номер продукта" Binding="{Binding Sale.IdProduct}"/>
+                <DataGridTextColumn Header="Номер продукта" Binding="{Binding Product.Id}"/>
                 <DataGridTextColumn Header="Номер клиента" Binding="{Binding Sale.IdClient}"/>
                 <DataGridTextColumn Header="Цена" Binding="{Binding Product.Price}"/>
                 <DataGridTextColumn Header="Дата" Binding="{Binding Sale.Date}"/>
@@ -42,6 +42,31 @@
             Text="До" />
             <DatePicker x:Name="Second"
                  Margin="10 0 " SelectedDateChanged="Second_SelectedDateChanged"/>
+
+            <ComboBox x:Name="PoGodam"
+                      Width="60" SelectionChanged="PoGodam_SelectionChanged"
+                >
+                <ComboBoxItem Content="Январь"/>
+                <ComboBoxItem Content="Февраль"/>
+                <ComboBoxItem Content="Март"/>
+                <ComboBoxItem Content="Апрель"/>
+                <ComboBoxItem Content="Май"/>
+                <ComboBoxItem Content="Июнь"/>
+                <ComboBoxItem Content="Июль"/>
+                <ComboBoxItem Content="Август"/>
+                <ComboBoxItem Content="Сентябрь"/>
+                <ComboBoxItem Content="Октябрь"/>
+                <ComboBoxItem Content="Ноябрь"/>
+                <ComboBoxItem Content="Декарбь"/>
+            </ComboBox>
+            <ComboBox x:Name="PoMes"
+                      Margin="10 0"
+                      Width="60" SelectionChanged="PoMes_SelectionChanged"
+                >
+                
+            </ComboBox>
+
+
         </WrapPanel>
 
 

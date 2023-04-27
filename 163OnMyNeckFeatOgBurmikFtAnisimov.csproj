@@ -155,6 +155,9 @@
     <Compile Include="Windows\RegistranionWindow.xaml.cs">
       <DependentUpon>RegistranionWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\ReportMainWindow.xaml.cs">
+      <DependentUpon>ReportMainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ReportWindow.xaml.cs">
       <DependentUpon>ReportWindow.xaml</DependentUpon>
     </Compile>
@@ -235,6 +238,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\RegistranionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ReportMainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
