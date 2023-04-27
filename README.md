@@ -44,6 +44,13 @@
 ![image](https://user-images.githubusercontent.com/116341190/231769729-6fc77c46-df9f-4894-819e-2590aa7773fb.png)
 ![image](https://user-images.githubusercontent.com/116341190/231769915-a995c976-8172-469e-add3-3a81febb5497.png)
 ![image](https://user-images.githubusercontent.com/116341190/231770019-52857f24-e665-4666-9161-4b3fbd956837.png)
+<b1> Покупка</b>
+![image](https://user-images.githubusercontent.com/116341190/234779147-f9ff6052-8663-4bf7-bbd1-c169dea34190.png)
+![image](https://user-images.githubusercontent.com/116341190/234779245-1c0eaaa4-2766-4754-a172-2d3f7494a5e0.png)
+![image](https://user-images.githubusercontent.com/116341190/234779289-6f5c5825-b0c5-47ef-90d8-26b6881ccb1a.png)
+![image](https://user-images.githubusercontent.com/116341190/234779321-fa150cc6-ede9-48e5-aab9-f0cd1d61036d.png)
+
+
 
 
 
