@@ -41,5 +41,11 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
             employeeWindow.Show();
             this.Close();
         }
+
+        private void btnReport_Click(object sender, RoutedEventArgs e)
+        {
+            ReportWindow reportWindow = new ReportWindow();
+            reportWindow.Show();
+        }
     }
 }

@@ -24,6 +24,7 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.BD
         public int IdEmployee { get; set; }
         public int IdProduct { get; set; }
         public int IdClient { get; set; }
+        public System.DateTime Date { get; set; }
     
         public virtual Client Client { get; set; }
         public virtual Employee Employee { get; set; }

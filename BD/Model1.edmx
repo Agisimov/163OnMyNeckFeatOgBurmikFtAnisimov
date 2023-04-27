@@ -30,7 +30,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="IdGiftCard" Type="int" Nullable="false" />
+          <Property Name="IdGiftCard" Type="int" />
           <Property Name="IdAccount" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Employee">
@@ -90,6 +90,7 @@
           <Property Name="IdEmployee" Type="int" Nullable="false" />
           <Property Name="IdProduct" Type="int" Nullable="false" />
           <Property Name="IdClient" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -114,7 +115,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Client1_GiftCard">
-          <End Role="GiftCard" Type="Self.GiftCard" Multiplicity="1" />
+          <End Role="GiftCard" Type="Self.GiftCard" Multiplicity="0..1" />
           <End Role="Client" Type="Self.Client" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="GiftCard">
@@ -431,7 +432,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="IdGiftCard" Type="Int32" Nullable="false" />
+          <Property Name="IdGiftCard" Type="Int32" />
           <Property Name="IdAccount" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Account" Relationship="AnisimovBurmistrovModel.FK_Client_Account" FromRole="Client" ToRole="Account" />
           <NavigationProperty Name="GiftCard" Relationship="AnisimovBurmistrovModel.FK_Client1_GiftCard" FromRole="Client" ToRole="GiftCard" />
@@ -505,6 +506,7 @@
           <Property Name="IdEmployee" Type="Int32" Nullable="false" />
           <Property Name="IdProduct" Type="Int32" Nullable="false" />
           <Property Name="IdClient" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="Client" Relationship="AnisimovBurmistrovModel.FK_Sale__Client1" FromRole="Sale" ToRole="Client" />
           <NavigationProperty Name="Employee" Relationship="AnisimovBurmistrovModel.FK_Sale__Employee" FromRole="Sale" ToRole="Employee" />
           <NavigationProperty Name="ProductSale" Relationship="AnisimovBurmistrovModel.FK_ProductSale_Sale_" FromRole="Sale" ToRole="ProductSale" />
@@ -556,7 +558,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Client1_GiftCard">
-          <End Type="AnisimovBurmistrovModel.GiftCard" Role="GiftCard" Multiplicity="1" />
+          <End Type="AnisimovBurmistrovModel.GiftCard" Role="GiftCard" Multiplicity="0..1" />
           <End Type="AnisimovBurmistrovModel.Client" Role="Client" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="GiftCard">
@@ -758,6 +760,7 @@
           <EntitySetMapping Name="Sale">
             <EntityTypeMapping TypeName="AnisimovBurmistrovModel.Sale">
               <MappingFragment StoreEntitySet="Sale">
+                <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="IdClient" ColumnName="IdClient" />
                 <ScalarProperty Name="IdProduct" ColumnName="IdProduct" />
                 <ScalarProperty Name="IdEmployee" ColumnName="IdEmployee" />

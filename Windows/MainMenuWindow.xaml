@@ -28,6 +28,11 @@
                     Content="Акаунт"
                     Margin="0 10 0 0"
                     Width="100"/>
+            <Button x:Name="btnReport"
+                    Height="30"
+                    Content="Отчеты"
+                    Margin="0 10 0 0"
+                    Width="100" Click="btnReport_Click"/>
 
 
 

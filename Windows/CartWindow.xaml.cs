@@ -19,6 +19,7 @@ using System.Collections.ObjectModel;
 
 namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
 {
+    
     /// <summary>
     /// Логика взаимодействия для CartWindow.xaml
     /// </summary>
@@ -51,9 +52,57 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
 
             if (selectedProduct != null)
             {
-                ClassHelper.CartClass.Products.Remove(selectedProduct);
+                CartClass.Products.Remove(selectedProduct);
             }
             GetListProduct();
         }
+
+        private void btnAddOnCart_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            if (button == null)
+            {
+                return;
+            }
+
+            BD.Product selectedProduct = button.DataContext as BD.Product;
+            if (selectedProduct != null)
+            {
+                selectedProduct.Quantity++;
+                int o = Products.IndexOf(selectedProduct);
+                Products.Remove(selectedProduct);
+                Products.Insert(o, selectedProduct);
+            }
+            GetListProduct();
+        }
+
+        private void Pay_Click(object sender, RoutedEventArgs e)
+        {
+            BD.Sale sale = new BD.Sale();
+            sale.IdEmployee = ClassHelper.EmployeeDataContextClass.employee.Id;
+            sale.IdClient = 1;
+            sale.Date = DateTime.Now;
+            if (sale != null)
+            {
+                context.Sale.Add(sale);
+                context.SaveChanges();
+            }
+
+
+            foreach (var item in Products)
+            {
+                BD.ProductSale productSale = new BD.ProductSale();
+                productSale.IdProduct = item.Id;
+                productSale.Quantity = item.Quantity;
+                productSale.IdSale = context.Sale.ToList().LastOrDefault().Id;
+                context.ProductSale.Add(productSale);
+                context.SaveChanges();
+            }
+            MessageBox.Show("Продукты успешно добавлены");
+            ProductListWindow productListWindow = new ProductListWindow();
+            productListWindow.Show();
+            Close();
+        }
     }
+    
 }

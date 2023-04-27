@@ -21,7 +21,7 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.BD
         }
     
         public int Id { get; set; }
-        public int IdGiftCard { get; set; }
+        public Nullable<int> IdGiftCard { get; set; }
         public int IdAccount { get; set; }
     
         public virtual Account Account { get; set; }

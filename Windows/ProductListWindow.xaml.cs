@@ -17,6 +17,7 @@ using static _163OnMyNeckFeatOgBurmikFtAnisimov.ClassHelper.EFClass;
 using static _163OnMyNeckFeatOgBurmikFtAnisimov.ClassHelper.CartClass;
 
 
+
 namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
 {
     /// <summary>
@@ -49,6 +50,7 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
 
         private void BtnAddToCart_Click(object sender, RoutedEventArgs e)
         {
+            bool seek = true;
             Button button = sender as Button;
             if (button == null)
             {
@@ -60,7 +62,19 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
 
             if (selectedProduct != null)
             {
-                ClassHelper.CartClass.Products.Add(selectedProduct);
+                for (int i = 0; i <  Products.Count; i++)
+                {
+                    if (Products[i] == selectedProduct)
+                    {
+                        Products[i].Quantity++;
+                        seek = false;
+                    }
+                }
+                if (seek)
+                {
+                    selectedProduct.Quantity = 1;
+                    Products.Add(selectedProduct);
+                }
             }
 
 
@@ -71,7 +85,7 @@ namespace _163OnMyNeckFeatOgBurmikFtAnisimov.Windows
         {
             CartWindow cartWindow = new CartWindow();
             cartWindow.Show();
-            this.Close();
+            
 
         }
     }

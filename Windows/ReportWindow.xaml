@@ -1,0 +1,50 @@
+﻿<Window x:Class="_163OnMyNeckFeatOgBurmikFtAnisimov.Windows.ReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_163OnMyNeckFeatOgBurmikFtAnisimov.Windows"
+        mc:Ignorable="d"
+        Title="ReportWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+
+        <TextBlock Text="Продажа"
+                   HorizontalAlignment="Center"
+                   FontSize="30"                
+                   FontWeight="Black" Foreground="#FF543213"/>
+
+        <DataGrid Grid.Row="2" x:Name="RepGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер заказа" Binding="{Binding Sale.Id}"/>
+                <DataGridTextColumn Header="Номер Работника" Binding="{Binding Sale.IdEmployee}"/>
+                <DataGridTextColumn Header="Номер продукта" Binding="{Binding Sale.IdProduct}"/>
+                <DataGridTextColumn Header="Номер клиента" Binding="{Binding Sale.IdClient}"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding Product.Price}"/>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Sale.Date}"/>
+                <DataGridTextColumn Header="Количество" Binding="{Binding Quantity}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <WrapPanel Grid.Row="1">
+            <TextBlock 
+            Text="За период" />
+            <DatePicker Name="Ot"
+                    
+                 Margin="10 0 " SelectedDateChanged="Ot_SelectedDateChanged"/>
+            <TextBlock 
+            Text="До" />
+            <DatePicker x:Name="Second"
+                 Margin="10 0 " SelectedDateChanged="Second_SelectedDateChanged"/>
+        </WrapPanel>
+
+
+
+    </Grid>
+</Window>
